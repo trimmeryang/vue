@@ -19,6 +19,7 @@ Vue.prototype.$mount = function (
   el?: string | Element,
   hydrating?: boolean
 ): Component {
+  debugger
   el = el && query(el)
 
   /* istanbul ignore if */
@@ -79,6 +80,7 @@ Vue.prototype.$mount = function (
       }
     }
   }
+  debugger
   return mount.call(this, el, hydrating)
 }
 

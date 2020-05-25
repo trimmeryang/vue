@@ -1,0 +1,19 @@
+<script src="../dist/vue.js"></script>
+<div id="app">
+</div>
+
+<script>
+new Vue({
+  el: '#app',
+  render: function (createElement) {
+    return createElement('div', {
+      attrs: {
+        id: 'app'
+      },
+    }, this.message)
+  },
+  data: {
+    message: 'Hello Vue'
+  }
+});
+</script>

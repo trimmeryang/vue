@@ -67,6 +67,7 @@ export function renderMixin (Vue: Class<Component>) {
   }
 
   Vue.prototype._render = function (): VNode {
+    debugger
     const vm: Component = this
     const { render, _parentVnode } = vm.$options
 
@@ -124,6 +125,7 @@ export function renderMixin (Vue: Class<Component>) {
     }
     // set parent
     vnode.parent = _parentVnode
+    debugger
     return vnode
   }
 }
